@@ -28,4 +28,4 @@ def get_geolocation_list(filename, n):
 			print("%s, %s" % (school["Geolocation"]["lat"], school["Geolocation"]["lng"]))
 
 if __name__ == "__main__":
-	get_geolocation_list("updated.json", 250)
+	get_geolocation_list("data.json", 10)

@@ -1,0 +1,22 @@
+#vis rect {
+  fill: steelblue;
+}
+
+#map {
+	width: 1000px;
+}
+
+.axis text {
+  font: 20px sans-serif;
+}
+
+.x text, .x .tick {
+	display: none;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
