@@ -2,8 +2,8 @@
   fill: steelblue;
 }
 
-#map {
-	width: 1000px;
+#vis {
+	padding: 100px;
 }
 
 .axis text {
@@ -17,6 +17,7 @@
 .axis path,
 .axis line {
   fill: none;
-  stroke: #000;
+  stroke: black;
+  stroke-width: 2px;
   shape-rendering: crispEdges;
 }
