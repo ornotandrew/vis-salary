@@ -1,0 +1,59 @@
+#vis-wrapper {
+	display: inline-block;
+}
+
+#vis-wrapper h1, #vis-wrapper h3 {
+	text-align: center;
+}
+
+#vis {
+	margin-top: 50px
+}
+
+.legend-heading {
+	font-weight: bold;
+	font: 25px sans-serif;
+}
+
+svg circle {
+	stroke: black;
+	stroke-opacity: 1;
+	stroke-width: 0.8;
+}
+
+text {
+  font: 20px sans-serif;
+  fill: black;
+}
+
+.x text, .x .tick {
+	display: none;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: black;
+  stroke-width: 2px;
+  shape-rendering: crispEdges;
+}
+
+circle.highlight {
+	/*fill: red;*/
+	stroke-width: 2;
+}
+
+circle.dim {
+	fill: #bbb;
+}
+
+rect.highlight {
+	stroke: black;
+	stroke-width: 1;
+	opacity: 1;
+}
+
+rect.dim {
+	fill: #bbb;
+}
+
