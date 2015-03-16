@@ -403,7 +403,7 @@ $('input[type="range"]').rangeslider({
 	}
 });
 
-d3.json("/data.json", function(d){
+d3.json("data.json", function(d){
 	sourceData = d;
 	plot();
 });
