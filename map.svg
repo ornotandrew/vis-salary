@@ -10,11 +10,12 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    version="1.1"
-   width="1812.2285"
-   height="940.77014"
+   width="100%"
+   height="100%"
    id="svg2"
    inkscape:version="0.48.5 r10040"
-   sodipodi:docname="map3.svg">
+   sodipodi:docname="map.svg"
+   viewBox="0 0 1299.4708 674.58564">
   <sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -24,8 +25,8 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1855"
-     inkscape:window-height="1056"
+     inkscape:window-width="925"
+     inkscape:window-height="1027"
      id="namedview3697"
      showgrid="false"
      fit-margin-top="0"
@@ -33,11 +34,11 @@
      fit-margin-right="0"
      fit-margin-bottom="0"
      inkscape:zoom="0.4658479"
-     inkscape:cx="1792.077"
-     inkscape:cy="767.55105"
-     inkscape:window-x="65"
+     inkscape:cx="847.56481"
+     inkscape:cy="818.361"
+     inkscape:window-x="992"
      inkscape:window-y="24"
-     inkscape:window-maximized="1"
+     inkscape:window-maximized="0"
      inkscape:current-layer="svg2" />
   <defs
      id="defs4" />
@@ -56,10 +57,10 @@
   <g
      style="display:none"
      id="Hilfslinien_anzeigen"
-     transform="translate(-24.344699,-14.853181)" />
+     transform="translate(-24.342592,-14.856808)" />
   <g
      id="g5009"
-     transform="translate(-0.02162187,0.00737307)">
+     transform="matrix(0.71705682,0,0,0.71705682,-0.01550411,0.00528691)">
     <path
        inkscape:connector-curvature="0"
        style="fill:none;stroke:#646464;stroke-width:3.11809993;stroke-linejoin:round;stroke-miterlimit:3.8636899"
