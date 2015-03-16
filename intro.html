@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<title>VIS 2015</title>
+
+	<!-- Bootstrap Core CSS -->
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Custom CSS -->
+	<link href="css/simple-sidebar.css" rel="stylesheet">
+	<link href="css/vis.css" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
+	<link href="css/rangeslider.css" rel="stylesheet">
+	
+	<!-- JS -->
+	<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+	<script src="js/d3-tip.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+	<script src="js/rangeslider.min.js"></script>
+
+</head>
+
+<body>
+
+	<div id="wrapper">
+
+		<!-- Sidebar -->
+		<div id="sidebar-wrapper">
+			<ul class="sidebar-nav">
+				<li class="sidebar-brand">
+					<a href="#">
+						VIS Project
+					</a>
+				</li>
+				<li>
+					<a href="/intro.html">Introduction</a>
+				</li>
+				<li>
+					<a href="/background.html">Background</a>
+				</li>
+				<li>
+					<a href="/queries.html">Visual Queries</a>
+				</li>
+				<li>
+					<a href="/mockup.html">Mockup</a>
+				</li>
+				<li>
+					<a href="/implementation.html">Implementation</a>
+				</li>
+				<li>
+					<a href="/index.html">Visualisation</a>
+				</li>
+			</ul>
+		</div>
+		<!-- /#sidebar-wrapper -->
+
+		<!-- Page Content -->
+		<div id="page-content-wrapper">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-lg-6">
+						<h1>Introduction</h1>
+						<p>My name is Andrew van Rooyen, and this is a project for the visualisation module in my Computer Science Honours course.</p>
+						<p>We got to choose our own topics, and I found some interesting data on <a href="http://www.payscale.com/college-salary-report/bachelors">salary potential for different colleges</a> in the USA. I thought that this would be interesting, and the data was really new.</p>
+						<p>So I looked around to see the ways in which people were already visualising this kind of data, and found that literally every single one was doing some kind of direct comparison. For example, there is a <a href="http://collegerealitycheck.com/en/colleges/compare/">tool</a> which lets you select multiple schools, and it shows you some metrics with the intention of helping you choose which one you want to go to.</p>
+						<p>So I decided to do something different, and display the data graphically. After some more looking, I found that there is <i>one</i> way to show 1D data on a 2D map. I'll talk more on this under "Background". Feeling brave, I chose to restrict myself to not doing it the easy way, and to come up with something interesting. I think it worked out, but you can judge for yourself.</p>
+						<h2>Getting data</h2>
+						<p>Payscale, the company which provides all the numbers, was very kind to have included <i>all</i> the data for the top 1000 schools (based on data from 2014-2015) in a javascript variable on their <a href="http://www.payscale.com/college-salary-report/bachelors">web page</a> (it's called 'rows' if you're interested).</p>
+						<p>While that made my life easier, there was no geolocation attached to each school. I wanted this, because I knew that I wanted to map the locations somehow. Manually looking up the coordinates of all 1000 schools would have taken more time than any sane person would spend, so I wrote a script. I queried the Google Maps API with {School name, state, zip code}, and I soon had all the data I needed. The image on the left is my very first plot of the locations.</p>
+						<p>The links on the sidebar follow the process I took to come up with the final visualisation.</p>
+					</div>
+					<div class="col-lg-6">
+						<img id="geomap" src="img/initialdata.png"></img>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /#page-content-wrapper -->
+
+	</div>
+	<!-- /#wrapper -->
+
+	<!-- Bootstrap Core JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+	<!-- Menu Toggle Script -->
+	<script>
+	$("#menu-toggle").click(function(e) {
+		e.preventDefault();
+		$("#wrapper").toggleClass("toggled");
+	});
+	</script>
+
+	<!-- Vis Script -->
+	<script src="js/vis.js"></script>
+
+</body>
+
+</html>
